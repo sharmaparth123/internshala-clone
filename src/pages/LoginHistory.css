@@ -1,0 +1,188 @@
+.login-history-page { padding: 40px 0 64px; }
+
+.lh-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.lh-header h1 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 6px;
+}
+.lh-header p { font-size: 14px; color: var(--gray-500); }
+.lh-count {
+  background: var(--blue-light);
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.lh-rules {
+  padding: 24px 28px;
+  margin-bottom: 24px;
+}
+.lh-rules h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--gray-900);
+}
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.rule-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+}
+.rule-icon { font-size: 26px; flex-shrink: 0; }
+.rule-title { font-size: 14px; font-weight: 700; color: var(--gray-800); margin-bottom: 4px; }
+.rule-desc { font-size: 12px; color: var(--gray-500); line-height: 1.5; }
+
+.empty-history {
+  text-align: center;
+  padding: 64px 40px;
+  color: var(--gray-400);
+}
+.empty-history h3 { font-size: 20px; font-weight: 600; color: var(--gray-700); margin: 12px 0 6px; }
+.empty-history p { font-size: 14px; }
+
+.history-list { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+
+.history-card {
+  padding: 20px 24px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.history-card.latest { border-left: 4px solid var(--blue); }
+
+.latest-badge {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: var(--blue);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.history-main {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.history-device-icon {
+  font-size: 32px;
+  width: 52px;
+  height: 52px;
+  background: var(--gray-50);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.history-details {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-row-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.history-browser,
+.history-os,
+.history-device-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.history-row-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+.history-ip,
+.history-time {
+  font-size: 13px;
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.recent-tag {
+  background: var(--green-light);
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 100px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
+.history-security { flex-shrink: 0; }
+.security-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.security-green { background: var(--green-light); color: var(--green); }
+.security-orange { background: #fff3ee; color: var(--orange); }
+.security-blue { background: var(--blue-light); color: var(--blue); }
+
+.lh-legend {
+  padding: 20px 24px;
+}
+.lh-legend h4 { font-size: 14px; font-weight: 700; color: var(--gray-700); margin-bottom: 12px; }
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .rules-grid { grid-template-columns: 1fr; }
+  .history-main { flex-wrap: wrap; }
+}
+@media (max-width: 600px) {
+  .history-row-top, .history-row-bottom { flex-direction: column; align-items: flex-start; gap: 6px; }
+}
