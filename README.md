@@ -21,16 +21,6 @@ npm install
 npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Demo Account
-
-Register a new account, or use the pre-seeded demo account:
-
-- **Email:** `test@test.com`
-- **Password:** `password123`
-
-> OTP verification is simulated in this demo. When an OTP modal appears, use the "Fill" button or copy the code shown in the demo banner.
 
 ## Tech Stack
 
@@ -66,17 +56,7 @@ src/
 
 ## Deployment
 
-### Vercel (recommended)
-
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/internshala-clone.git
-git push -u origin main
-```
-
-Then go to [vercel.com](https://vercel.com), import the repo, and deploy. The included `vercel.json` handles SPA routing automatically.
+  Netlify
 
 ## Notes
 
